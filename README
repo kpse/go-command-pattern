@@ -1,0 +1,5 @@
+用例一：Agent向Server请求工作，Server回答从GitHub中clone出一个干净的codebase（khu/emptyrepo · GitHub），验收条件，在本机可以找到响应的两个文件。
+用例二：Agent向Server请求工作，Server回答什么都不做，验收条件，文件系统没有变化。
+用例三：Agent向Server请求工作，Server回答删除本地的Codebase, 验收条件，已经clone的codebase在文件系统中不存在。
+用例四：Agent向Server请求工作，如果Agent执行成功，则Server.ShouldRerun返回真，如果Agent执行不成功，则Server.ShouldRerun返回假。
+用例五：Agent向Server请求工作，Server回答显示Agent端目录结构(ls/dir), 验收条件，可以以文本形式列出所有的目录结构。
